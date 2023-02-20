@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+body {
+  margin: 0;
+  font-family: 'Itim', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}

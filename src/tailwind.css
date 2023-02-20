@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-item {
+        @apply text-white mx-4 my-2 lg:my-5 text-xl uppercase relative
+        md:block
+        lg:text-xl;
+    }
+    .nav-item::after{
+        @apply bg-white h-0.5 w-[0%] absolute content-[''] left-0 top-8 duration-200 
+    }
+    .nav-item:hover::after{
+        @apply w-[100%] 
+    }
+    .text-footer-title {
+        @apply text-3xl text-white py-3
+        md:py-4
+        max-[414px]:py-2
+    }
+    .text-footer {
+        @apply text-white capitalize cursor-pointer hover:underline hover:decoration-1 hover:underline-offset-4
+    }
+    
+}
