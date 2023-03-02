@@ -20,11 +20,13 @@
     "react-dom": "^18.2.0",
     "react-modern-drawer": "^1.2.0",
     "react-router-dom": "^6.8.1",
+    "react-toastify": "^9.1.1",
     "swiper": "^9.0.3",
     "validator": "^13.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
+    "@types/react-currency-format": "^1.0.0",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "autoprefixer": "^10.4.13",
