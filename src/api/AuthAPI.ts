@@ -24,7 +24,7 @@ export function LoginAPI(email:string, password:string,clearPass?:any,closePopup
         });
 }
 
-export async function RegisterAPI(newUser:any, password:string) {
+export async function Register(newUser:any, password:string) {
     // Create a new user with Firebase
     await createUserWithEmailAndPassword(authentication, newUser.userEmail, password).then((userAuth) => {
         // Update the newly created user with a display name and a picture
@@ -38,7 +38,7 @@ export async function RegisterAPI(newUser:any, password:string) {
     })
 }
 
-export function LogoutAPI() {
+export function Logout() {
     authentication.signOut().then(() => {
         localStorage.removeItem('currentUser')
     })

@@ -4,7 +4,7 @@ import AppButton from '../../../global_components/AppButton';
 import TextField from '../../../global_components/TextField';
 import { useAuth } from '../../../contexts/AuthContext';
 import { AuthState } from '../../../contexts/AuthContext'
-import { RegisterAPI } from '../../../api/AuthAPI';
+import { Register } from '../../../api/AuthAPI';
 import isEmail from 'validator/lib/isEmail';
 
 const SignUp = (props: any) => {
@@ -31,7 +31,7 @@ const SignUp = (props: any) => {
             'orders': [],
             'favoriteProducts': []
         }
-        RegisterAPI(newUser, pass);
+        Register(newUser, pass);
         props.onClose()
     }
 

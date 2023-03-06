@@ -34,9 +34,6 @@ function App() {
       <div id="detail">
         <Outlet />
       </div>
-      <div className='grid grid-cols-2 justify-items-center md:grid-cols-3 lg:grid-cols-4 gap-y-4 my-4'>
-
-      </div>
       <Footer />
       <IconButton icon={faArrowUp}
         className={`fixed ${visible ? 'inline' : 'hidden'} border border-dark-grey

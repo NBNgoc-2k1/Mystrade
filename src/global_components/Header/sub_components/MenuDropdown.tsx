@@ -2,9 +2,12 @@ import { faArrowRightFromBracket,  faHeart, faReceipt } from '@fortawesome/free-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import user from '../../../assets/images/global/meditation.png'
+import { Logout } from '../../../api/AuthAPI';
 const MenuDropdown = (props: any) => {
+    const navigation = useNavigate();
+    const location = useLocation()
 
     const handleBeforeUnload = (e:any) => {
         e.preventDefault();
@@ -128,6 +131,8 @@ const MenuDropdown = (props: any) => {
                         </Link>
                     </div>
                     <div className="flex mb-4" onClick={() => {
+                        Logout()
+                        navigation('/')
                         window.location.reload()
                     }}>
                         <FontAwesomeIcon icon={faArrowRightFromBracket} size="xl" color="white" />
