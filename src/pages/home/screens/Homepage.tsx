@@ -1,12 +1,15 @@
 import React from 'react'
-import ProductCard from '../../../global_components/ProductCard'
+import BestSeller from '../components/BestSeller'
+import BlogIntro from '../components/BlogIntro/BlogIntro'
+import NewProduct from '../components/NewProduct'
 
 const Homepage = () => {
     return (
-        <div>
-            
-
-        </div>
+        <>
+            <BestSeller />
+            <NewProduct />
+            <BlogIntro />
+        </>
     )
 }
 
