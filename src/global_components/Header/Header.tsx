@@ -33,7 +33,7 @@ const Header = () => {
     }
 
     return (
-        <header className='sticky top-0 z-20 bg-brown max-xl:py-4'>
+        <header className='sticky top-0 shadow-md shadow-dark-grey z-20 bg-brown max-xl:py-4'>
             <div className='flex justify-around'>
                 <div className='flex lg:absolute'>
                     <IconButton icon={faBars} className='mx-1.5 lg:hidden my-auto'
@@ -59,7 +59,9 @@ const Header = () => {
                     </Drawer>
                 </div>
                 <Navigation className='hidden lg:flex bg-brown justify-center' />
-                <SearchBar className='max-xl:hidden' />
+                <SearchBar className='max-xl:hidden xl:w-1/3 mx-4 sm:mx-14 md:mx-20 lg:mx-10' icon={faSearch} onClick={() => {}} 
+                    placeholder='What are you looking for' actionName='Search' 
+                />
                 <div className='flex justify-between'>
                     <IconButton icon={faSearch} className='mx-1.5 hidden lg:max-xl:block my-auto'
                         iconClass='text-white text-3xl' onClick={toggleSearchBar} />
