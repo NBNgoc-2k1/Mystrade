@@ -14,7 +14,7 @@ const TextField = (props: any) => {
             />
             <label className={`absolute px-3 text-placeholder mt-1 duration-300 transform left-0 
                 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:text-brown peer-focus:bg-light-silver
-                ${props.value !== '' ? '-translate-y-4 scale-75 bg-light-silver' : ''}
+                ${(props.value !== '' || (props.placeholder !== '' && props.placeholder !== undefined)) ? '-translate-y-4 scale-75 bg-light-silver' : ''}
             `}>
                 {props.label}
             </label>

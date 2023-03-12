@@ -59,7 +59,8 @@ const SignUp = (props: any) => {
                 <p className="ml-2">Account</p>
             </div>
             <div className="w-72 m-auto">
-                <TextField label='Full name' type='text' value={fullName} onChange={(event: any) => setFullName(event.target.value)} />
+                <TextField label='Full name' type='text' value={fullName} placeholder='e.g. John Wick'
+                    onChange={(event: any) => setFullName(event.target.value)} />
                 <TextField label='Email' type='email' value={email} onChange={(event: any) => setEmail(event.target.value)} />
                 <TextField label='Password' type={showPass ? 'text' : 'password'}
                     value={pass} onChange={(event: any) => setPass(event.target.value)}
