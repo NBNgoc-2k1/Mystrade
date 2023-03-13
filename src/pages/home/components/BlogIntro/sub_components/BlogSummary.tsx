@@ -11,7 +11,9 @@ const BlogSummary = (props: any) => {
 
     return (
         <div className='flex bg-teal rounded-xl mx-auto w-80 sm:w-96 my-6'>
-            <img src={props.data.coverPhoto} className='w-32 sm:w-40 h-24 rounded-l-xl cursor-pointer' />
+            <a href={`https://mythicala.vercel.app//blogs/${props.data.id}`}>
+                <img src={props.data.coverPhoto} className='w-32 sm:w-40 h-24 rounded-l-xl cursor-pointer' />
+            </a>
             <div className='text-white ml-6 mt-2'>
                 <a href={`https://mythicala.vercel.app//blogs/${props.data.id}`}>
                     <p className='uppercase font-semibold cursor-pointer text-xl hover:text-dark-grey'>{props.data.blogTitle}</p>
